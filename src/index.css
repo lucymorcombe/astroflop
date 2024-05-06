@@ -1,0 +1,41 @@
+:root {
+  --bg-color: #ee82ee;
+  --secondary-bg-color: #48196a;
+  --nav-color: #3b6a19;
+  --primary-fg-color: #48196a;
+  --secondary-fg-color: #ee82ee;
+  --tertiary-fg-color: #82ee82;
+  --accent-color: #3b6a19;
+  --secondary-accent-color: #82ee82;
+  --tertiary-accent-color: #ee82ee;
+  --bg-image-logo: url(assets/logoLightMode.svg);
+  --svg-filter: invert(15%) sepia(48%) saturate(2375%) hue-rotate(254deg)
+    brightness(93%) contrast(106%);
+  --primary-accent-svg-filter: invert(31%) sepia(84%) saturate(415%)
+    hue-rotate(51deg) brightness(93%) contrast(91%);
+  --secondary-accent-svg-filter: invert(81%) sepia(43%) saturate(475%)
+    hue-rotate(62deg) brightness(95%) contrast(98%);
+  --toggle-bg: #48196a;
+  --toggle-bg-image: url(assets/moon.svg);
+}
+
+[data-theme="dark"] {
+  --bg-color: #48196a;
+  --secondary-bg-color: #ee82ee;
+  --nav-color: #82ee82;
+  --primary-fg-color: #ee82ee;
+  --secondary-fg-color: #48196a;
+  --tertiary-fg-color: #48196a;
+  --accent-color: #82ee82;
+  --secondary-accent-color: #3b6a19;
+  --tertiary-accent-color: #3b6a19;
+  --bg-image-logo: url(assets/logoDarkMode.svg);
+  --svg-filter: invert(73%) sepia(74%) saturate(1515%) hue-rotate(242deg)
+    brightness(97%) contrast(93%);
+  --primary-accent-svg-filter: invert(95%) sepia(98%) saturate(662%)
+    hue-rotate(49deg) brightness(100%) contrast(87%);
+  --secondary-accent-svg-filter: invert(31%) sepia(84%) saturate(415%)
+    hue-rotate(51deg) brightness(93%) contrast(91%);
+  --toggle-bg: #ee82ee;
+  --toggle-bg-image: url(assets/sun.svg);
+}

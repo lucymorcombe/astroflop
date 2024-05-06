@@ -1,0 +1,1380 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap");
+
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.bodyClass {
+  background-color: var(--bg-color);
+  width: 100vw;
+  height: 100%;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #82ee82;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5e2f80;
+  border-radius: 20px;
+}
+
+.logo {
+  width: 14%;
+  margin-left: 43%;
+  padding-top: 5px;
+  background-image: var(--bg-image-logo);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.logo img {
+  visibility: hidden;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px 10px;
+}
+
+li {
+  list-style: none;
+  font-family: "Gluten", cursive;
+  text-align: center;
+  color: #48196a;
+}
+
+a {
+  text-decoration: none;
+}
+
+.listItem1 {
+  padding: 75px 75px 75px;
+  background-image: url(assets/cloud1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-top: -200px;
+  margin-right: -50px;
+}
+
+.listItem2 {
+  padding: 60px 50px 50px;
+  background-image: url(assets/cloud2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-top: -50px;
+}
+
+.listItem3 {
+  padding: 70px 50px 25px;
+  background-image: url(assets/cloud3.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-top: -50px;
+  margin-right: -150px;
+}
+
+.listItem4 {
+  padding: 60px 60px 60px;
+  background-image: url(assets/cloud2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-top: -150px;
+}
+
+.listItem1Mob,
+.listItem2Mob,
+.listItem3Mob,
+.listItem4Mob {
+  display: none;
+}
+
+/* Repeated Styles */
+
+.pageTitles {
+  text-align: center;
+  background-color: var(--secondary-bg-color);
+  border-top: var(--tertiary-fg-color) 4px ridge;
+  border-bottom: var(--tertiary-fg-color) 4px ridge;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.pageTitles h1 {
+  color: var(--tertiary-fg-color);
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.pageTitles h3 {
+  color: var(--tertiary-accent-color);
+  margin-bottom: 0px;
+}
+
+.pageIntros {
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Home Page */
+
+.animation {
+  position: relative;
+}
+
+.world {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: 55px;
+  margin-top: 50px;
+}
+
+.world img {
+  animation: rotation 10s infinite linear;
+  width: 80%;
+  margin-left: 200px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.moon {
+  position: absolute;
+  z-index: 2;
+  right: 100px;
+}
+
+.moon img {
+  width: 100%;
+  animation: rotation 30s infinite linear;
+  transform-origin: bottom right;
+}
+
+.homeIntro1 {
+  text-align: center;
+  text-shadow: 1px 1px black;
+  margin-top: 30px;
+  text-transform: capitalize;
+  font-size: 1.5em;
+}
+
+.homeIntro2 {
+  text-align: center;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 40px;
+}
+
+.homeIntro3 {
+  background-color: var(--secondary-bg-color);
+  width: 65%;
+  padding: 20px;
+  border-bottom: var(--tertiary-fg-color) 4px ridge;
+  border-top: var(--tertiary-fg-color) 4px ridge;
+  border-right: var(--tertiary-fg-color) 4px ridge;
+}
+
+.homeIntro3 h1 {
+  color: var(--secondary-accent-color);
+  margin-left: 20px;
+  line-height: 1.2;
+}
+
+.examplesText {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+.wedding,
+.office,
+.talkingStage {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.wedding img,
+.office img,
+.talkingStage img {
+  width: 30%;
+}
+
+.qAndA {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
+  border-top: #82ee82 4px ridge;
+  border-bottom: #82ee82 4px ridge;
+  margin-top: 80px;
+}
+
+.questions {
+  text-align: center;
+  margin: 30px 30px 30px;
+}
+
+.questions h2 {
+  color: var(--secondary-fg-color);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.answer {
+  background-color: #82ee82;
+  border-left: #82ee82 4px ridge;
+}
+
+.answer img {
+  width: 50%;
+  margin-left: 25%;
+  filter: invert(15%) sepia(48%) saturate(2375%) hue-rotate(254deg)
+    brightness(93%) contrast(106%);
+  padding-top: 20px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.answer h2 {
+  color: #48196a;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.contactUs {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.contactUs p {
+  width: 50%;
+  margin-left: 25%;
+}
+
+input {
+  background-color: var(--bg-color);
+  color: var(--primary-fg-color);
+  margin-bottom: 10px;
+  width: 20%;
+  border-bottom: 2px solid var(--primary-fg-color);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input::placeholder {
+  color: var(--primary-fg-color);
+}
+
+textarea {
+  background-color: var(--bg-color);
+  color: var(--primary-fg-color);
+  width: 20%;
+  border: 2px solid var(--primary-fg-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea::placeholder {
+  color: var(--primary-fg-color);
+}
+
+.contactUs button {
+  width: 10%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Sun Signs page */
+
+.signCard {
+  text-align: center;
+  padding: 10px;
+}
+
+.signCard img {
+  filter: var(--svg-filter);
+  width: 80%;
+}
+
+.signCard p {
+  font-size: 0.7em;
+}
+
+.signImages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: flex-end;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 50px;
+}
+
+.signInfoBlock {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  grid-template-areas: "infoImg infoText";
+  width: 70%;
+  margin-left: 15%;
+  padding-top: 30px;
+  align-items: center;
+  margin-bottom: -5px;
+}
+
+.indivStyle {
+  background-color: var(--secondary-bg-color);
+  width: 70%;
+  margin-left: 15%;
+}
+
+.signInfoBlockImage {
+  grid-area: infoImg;
+}
+
+.signInfoBlockImage img {
+  width: 90%;
+  margin-left: 5%;
+  filter: var(--secondary-accent-svg-filter);
+}
+
+.signInfoBlockText {
+  grid-area: infoText;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.signInfoBlockText p {
+  color: var(--secondary-fg-color);
+}
+
+.signInfoBlockText h2 {
+  color: var(--secondary-fg-color);
+}
+
+/* Other signs page */
+
+.overview {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.moonOverview,
+.risingOverview {
+  width: 40%;
+  text-align: center;
+  background-color: var(--secondary-bg-color);
+  padding: 10px;
+  margin: 10px;
+  border: #3b6a19 4px solid;
+}
+
+.moonOverview h2,
+.risingOverview h2 {
+  color: var(--secondary-fg-color);
+  text-shadow: 1.5px 1.5px black;
+}
+
+.moonOverview p,
+.risingOverview p {
+  color: var(--secondary-fg-color);
+  font-size: 0.7em;
+}
+
+.bigThree {
+  text-align: center;
+  background-color: var(--secondary-accent-color);
+  padding: 70px;
+  margin: 70px 0px 70px;
+  border-top: var(--primary-fg-color) 10px solid;
+  border-bottom: var(--primary-fg-color) 10px solid;
+}
+
+.bigThree h1,
+.bigThree h2,
+.bigThree p {
+  color: var(--primary-fg-color);
+}
+
+.bigThree h2 {
+  text-shadow: 2px 2px black;
+}
+
+.otherSignsInfoBlock {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-areas: "moon image rising";
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 50px;
+}
+
+.otherSignsInfoBlockMid {
+  grid-area: image;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.otherSignsInfoBlockMid img {
+  padding-left: 50px;
+  padding-right: 50px;
+  filter: var(--svg-filter);
+}
+
+.moonSignsInfoBlockText {
+  grid-area: moon;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.moonSignsInfoBlockText h3,
+.risingSignsInfoBlockText h3 {
+  display: none;
+}
+
+.risingSignsInfoBlockText {
+  grid-area: rising;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.moonSignsInfoBlockText p,
+.risingSignsInfoBlockText p {
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.otherFooter {
+  background-color: var(--secondary-bg-color);
+  padding-bottom: 10px;
+  border-top: var(--secondary-accent-color) solid 3px;
+  border-bottom: var(--secondary-accent-color) solid 3px;
+}
+
+.moreInfoTitle {
+  text-align: center;
+  width: 20%;
+  margin-left: 40%;
+  padding: 1px;
+  color: var(--secondary-fg-color);
+}
+
+.moreInfoTitle h3 {
+  color: var(--secondary-fg-color);
+}
+
+.moreInfoTitle p {
+  font-size: 0.8em;
+  color: var(--secondary-fg-color);
+}
+
+.moreInfo {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.moreInfo p {
+  margin: 2px;
+  font-size: 0.7em;
+  color: var(--secondary-fg-color);
+}
+
+/* Horoscope page */
+
+.horoscopeWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  align-items: center;
+  margin-top: 30px;
+}
+
+.buttons {
+  grid-area: left;
+}
+
+.signImages2 {
+  grid-area: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: flex-end;
+  width: 90%;
+  font-size: 1em;
+}
+
+.signButtonGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+button {
+  width: 100%;
+  text-transform: capitalize;
+  font-family: "Gluten", cursive;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-fg-color);
+  font-size: 0.8em;
+  padding: 20px 30px 20px;
+  border-radius: 10px;
+  border-color: var(--secondary-bg-color);
+  border-style: outset;
+  cursor: pointer;
+}
+
+.timeframeButtonGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.restartButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.restartButton button {
+  width: 72px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--secondary-bg-color);
+  border: 3px inset var(--secondary-bg-color);
+}
+
+.horoscopeStyle {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  color: var(--primary-fg-color);
+  padding: 10px;
+}
+
+.horoscopeStyle h2 {
+  padding-top: 15px;
+  text-transform: capitalize;
+}
+
+.horoscopeStyle p {
+  font-size: 0.9em;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.viewToggleContainer {
+  position: sticky;
+  z-index: 998;
+  bottom: 20px;
+  margin-left: 15px;
+  width: 50px;
+}
+
+.viewToggle {
+  visibility: hidden;
+}
+
+.viewToggle + label {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--toggle-bg);
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-image: var(--toggle-bg-image);
+  border: var(--bg-color) solid 2px;
+}
+
+.viewLabel label p {
+  font-size: 40px;
+  top: -10px;
+  margin-left: 8.5px;
+  line-height: 50px;
+}
+
+h1 {
+  font-family: "Gluten", cursive;
+  font-size: 3em;
+  color: var(--accent-color);
+  text-shadow: 2px 2px black;
+}
+
+h2 {
+  font-family: "Gluten", cursive;
+  color: var(--primary-fg-color);
+}
+
+h3 {
+  font-family: "Gluten", cursive;
+  font-size: 0.9em;
+  color: var(--primary-fg-color);
+}
+
+p {
+  font-family: "Gluten", cursive;
+  font-size: 0.85em;
+  color: var(--primary-fg-color);
+  line-height: 1.3;
+}
+
+/* Responsive Design */
+
+/* Mobile  */
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 40%;
+    padding-top: 50px;
+    margin-left: 30%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 0px;
+    row-gap: 8px;
+    font-size: 14px;
+    padding-top: 0px;
+  }
+
+  li {
+    color: var(--accent-color);
+  }
+
+  .listItem1,
+  .listItem2,
+  .listItem3,
+  .listItem4 {
+    display: none;
+  }
+
+  .listItem1Mob,
+  .listItem2Mob,
+  .listItem3Mob,
+  .listItem4Mob {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .animation {
+    display: none;
+  }
+
+  .homeIntro1 {
+    font-size: 1.3em;
+  }
+
+  .homeIntro2 {
+    width: 94%;
+    margin-left: 3%;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .homeIntro3 {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    border-right: none;
+  }
+
+  .homeIntro3 h1 {
+    margin-left: 0px;
+  }
+
+  .examplesText {
+    width: 94%;
+    margin-left: 3%;
+    text-align: left;
+    font-size: 0.8em;
+    margin-bottom: 0px;
+  }
+
+  .wedding,
+  .talkingStage {
+    flex-direction: column;
+  }
+
+  .office {
+    flex-direction: column-reverse;
+  }
+
+  .wedding,
+  .office,
+  .talkingStage {
+    width: 94%;
+    margin-left: 3%;
+  }
+
+  .wedding img,
+  .office img,
+  .talkingStage img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .qAndA {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+
+  .answer {
+    border-left: none;
+  }
+
+  .contactUs p {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  input {
+    width: 60%;
+  }
+
+  .pageIntros {
+    width: 94%;
+    margin-left: 3%;
+    text-align: left;
+  }
+
+  textarea {
+    width: 60%;
+  }
+
+  .contactUs button {
+    width: 30%;
+    margin-left: 0px;
+  }
+
+  .signCard img {
+    width: 80%;
+  }
+
+  .signImages {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 94%;
+    margin-left: 3%;
+  }
+
+  .signImages h3 {
+    font-size: 0.8em;
+  }
+
+  .signInfoBlock {
+    grid-template-columns: 1fr;
+    grid-template-areas: "infoImg" "infoText";
+    width: 94%;
+    margin-left: 4%;
+  }
+
+  .indivStyle {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .signInfoBlockImage img {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .signInfoBlockText {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .overview {
+    flex-direction: column;
+    margin-left: 5%;
+  }
+
+  .moonOverview,
+  .risingOverview {
+    width: 90%;
+    margin-left: 0%;
+    margin-bottom: 20px;
+  }
+
+  .moonOverview p,
+  .risingOverview p {
+    font-size: 16px;
+  }
+
+  .bigThree {
+    margin: 20px 0px 40px;
+    padding: 20px;
+  }
+
+  .bigThree h2 {
+    line-height: 1.4;
+  }
+
+  .otherSignsInfoBlock {
+    grid-template-columns: 1fr;
+    grid-template-areas: "image" "moon" "rising";
+    width: 94%;
+    margin-left: 3%;
+  }
+
+  .otherSignsInfoBlockMid img {
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+
+  .moonSignsInfoBlockText,
+  .risingSignsInfoBlockText {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .moonSignsInfoBlockText p,
+  .risingSignsInfoBlockText p {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .moonSignsInfoBlockText h3,
+  .risingSignsInfoBlockText h3 {
+    display: flex;
+  }
+
+  .otherSignsInfoBlockMid h2 {
+    display: none;
+  }
+
+  .otherFooter {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .moreInfoTitle {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .moreInfo {
+    width: 94%;
+    margin-left: 6%;
+    text-align: left;
+    padding-bottom: 9px;
+  }
+
+  .moreInfoTitle p {
+    font-size: 16px;
+    color: var(--secondary-fg-color);
+  }
+
+  .moreInfo p {
+    font-size: 16px;
+  }
+
+  .horoscopeWrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: "left" "right";
+    width: 100vw;
+  }
+
+  .signButtonGrid {
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    align-items: center;
+  }
+
+  .signButtonGrid button {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .timeframeButtonGrid {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .timeframeButtonGrid button {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .restartButton {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .restartButton button {
+    margin-left: 0%;
+  }
+
+  .horoscopeStyle {
+    width: 94%;
+    margin-left: 3%;
+    padding: 0px;
+  }
+
+  .horoscopeStyle p {
+    padding: 0px;
+  }
+
+  button {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .signImages2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .signImages2 img {
+    width: 60%;
+  }
+
+  .signImages2 h3 {
+    font-size: 0.8em;
+  }
+
+  .viewToggle + label {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Tablets */
+
+@media only screen and (min-width: 601px) and (max-width: 999px) {
+  .logo {
+    width: 30%;
+    margin-left: 35%;
+    padding-top: 50px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 0px;
+    row-gap: 8px;
+    font-size: 14px;
+    padding-top: 0px;
+  }
+
+  li {
+    color: var(--accent-color);
+  }
+
+  .listItem1,
+  .listItem2,
+  .listItem3,
+  .listItem4 {
+    display: none;
+  }
+
+  .listItem1Mob,
+  .listItem2Mob,
+  .listItem3Mob,
+  .listItem4Mob {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .animation {
+    display: none;
+  }
+
+  .homeIntro1 {
+    width: 94%;
+    margin-left: 3%;
+  }
+
+  .homeIntro2 {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .homeIntro2 p {
+    font-size: 18px;
+  }
+
+  .homeIntro3 {
+    width: 100%;
+    border-right: none;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .examplesText {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .wedding,
+  .office,
+  .talkingStage {
+    width: 94%;
+    margin-left: 3%;
+  }
+
+  .wedding h1,
+  .office h1,
+  .talkingStage h1 {
+    font-size: 2.4em;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .wedding img,
+  .office img,
+  .talkingStage img {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .qAndA {
+    grid-template-columns: 1fr;
+  }
+
+  .answer {
+    border-left: none;
+  }
+
+  .contactUs p {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  input {
+    width: 40%;
+  }
+
+  textarea {
+    width: 40%;
+  }
+
+  .contactUs button {
+    margin-left: 0px;
+    width: 20%;
+  }
+
+  .pageIntros {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .signImages {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .signInfoBlock {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .indivStyle {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .otherSignsInfoBlock {
+    grid-template-columns: 1fr;
+    grid-template-areas: "image" "moon" "rising";
+    width: 94%;
+    margin-left: 3%;
+  }
+
+  .otherSignsInfoBlockMid img {
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+
+  .moonSignsInfoBlockText,
+  .risingSignsInfoBlockText {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .moonSignsInfoBlockText p,
+  .risingSignsInfoBlockText p {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .moonSignsInfoBlockText h3,
+  .risingSignsInfoBlockText h3 {
+    display: flex;
+  }
+
+  .otherSignsInfoBlockMid h2 {
+    display: none;
+  }
+
+  .moreInfoTitle {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .moreInfo {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .horoscopeWrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: "left" "right";
+    width: 100vw;
+  }
+
+  .signButtonGrid {
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    align-items: center;
+  }
+
+  .signButtonGrid button {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .timeframeButtonGrid {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .timeframeButtonGrid button {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .restartButton {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .restartButton button {
+    margin-left: 0%;
+  }
+
+  .horoscopeStyle {
+    width: 94%;
+    margin-left: 3%;
+    padding: 0px;
+  }
+
+  .horoscopeStyle p {
+    padding: 0px;
+  }
+
+  button {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .signImages2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .signImages2 img {
+    width: 60%;
+  }
+
+  .signImages2 h3 {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1099px) {
+  .listItem4 {
+    margin-left: 60px;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+  .listItem4 {
+    margin-left: 40px;
+  }
+}
+
+/* Large Screens  */
+
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
+  .wrapper {
+    max-width: 60%;
+    margin-left: 20%;
+  }
+
+  .homeIntro3 {
+    border-left: var(--tertiary-fg-color) 4px ridge;
+  }
+
+  .examplesText {
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+
+  .qAndA {
+    border-left: var(--tertiary-fg-color) 4px ridge;
+    border-right: var(--tertiary-fg-color) 4px ridge;
+  }
+
+  .pageTitles {
+    border-left: var(--tertiary-fg-color) 4px ridge;
+    border-right: var(--tertiary-fg-color) 4px ridge;
+  }
+
+  .bigThree {
+    border-left: var(--primary-fg-color) 10px solid;
+    border-right: var(--primary-fg-color) 10px solid;
+  }
+
+  .otherFooter {
+    border-left: var(--secondary-accent-color) solid 3px;
+    border-right: var(--secondary-accent-color) solid 3px;
+  }
+}
+
+@media only screen and (min-width: 3001px) and (max-width: 4000px) {
+  .wrapper {
+    max-width: 50%;
+    margin-left: 25%;
+  }
+
+  .homeIntro3 {
+    border-left: var(--tertiary-fg-color) 4px ridge;
+  }
+
+  .examplesText {
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+
+  .qAndA {
+    border-left: var(--tertiary-fg-color) 4px ridge;
+    border-right: var(--tertiary-fg-color) 4px ridge;
+  }
+
+  .pageTitles {
+    border-left: var(--tertiary-fg-color) 4px ridge;
+    border-right: var(--tertiary-fg-color) 4px ridge;
+  }
+
+  .bigThree {
+    border-left: var(--primary-fg-color) 10px solid;
+    border-right: var(--primary-fg-color) 10px solid;
+  }
+
+  .otherFooter {
+    border-left: var(--secondary-accent-color) solid 3px;
+    border-right: var(--secondary-accent-color) solid 3px;
+  }
+}
+
+@media only screen and (min-width: 4001px) and (max-width: 5000px) {
+  .wrapper {
+    max-width: 40%;
+    margin-left: 30%;
+  }
+
+  .homeIntro3 {
+    border-left: var(--tertiary-fg-color) 4px ridge;
+  }
+
+  .examplesText {
+    text-align: left;
+    width: 50%;
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+
+  .qAndA {
+    border-left: var(--tertiary-fg-color) 4px ridge;
+    border-right: var(--tertiary-fg-color) 4px ridge;
+  }
+
+  .pageTitles {
+    border-left: var(--tertiary-fg-color) 4px ridge;
+    border-right: var(--tertiary-fg-color) 4px ridge;
+  }
+
+  .bigThree {
+    border-left: var(--primary-fg-color) 10px solid;
+    border-right: var(--primary-fg-color) 10px solid;
+  }
+
+  .otherFooter {
+    border-left: var(--secondary-accent-color) solid 3px;
+    border-right: var(--secondary-accent-color) solid 3px;
+  }
+}
