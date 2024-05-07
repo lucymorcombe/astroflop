@@ -19,7 +19,7 @@ function App() {
           <img src={logo} alt="logo" />
         </div>
 
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <header>
             <nav>
               <ul>
