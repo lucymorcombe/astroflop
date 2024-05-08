@@ -74,8 +74,10 @@ Free vector: Zodiac signs, Doodle Art Black & white illustration graphic set vec
 HeroTofu (2023) React contact form with frontend code only. send emails or save to google spreasheet, HeroTofu. Available at: https://herotofu.com/solutions/guides/react-contact-form (Accessed: 06 May 2024). 
 
 
+----------------------------------------------------------------------------
 
-Live url - https://astroflop.netlify.app/
+
+**Live url** - https://astroflop.netlify.app/
 
 When deploying my site I realised there was an issue with my API. The API I used was of a non-secure HTTP site, and when deploying this on a HTTPS site the entire data fetching section of my site does not display as browsers automatically block mixed content for security. For you to be able to see that I have done this, you can temporarily disable this feature.
 
