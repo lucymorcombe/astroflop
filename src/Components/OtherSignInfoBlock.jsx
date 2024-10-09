@@ -1,7 +1,7 @@
 function OtherSignInfoBlock(props) {
   return (
     <div className="otherSignsInfoBlock">
-      <div className="otherSignsInfoBlockMid">
+      <div className="otherSignsInfoBlockMid" id={props.id}>
         <h2>{props.title}</h2>
         <img src={props.image} alt={props.alt} />
       </div>

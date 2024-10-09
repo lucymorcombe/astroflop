@@ -2,6 +2,7 @@ import OtherSignsInfo from "../Components/OtherSignsInfo";
 import MoonSignOverview from "../Components/MoonSignOverview";
 import RisingSignOverview from "../Components/RisingSignOverview";
 import MoreInfoOnSigns from "../Components/MoreInfoOnSigns";
+import JumpButtons from "../Components/JumpButtons";
 
 function OtherSignsPage() {
   return (
@@ -51,6 +52,8 @@ function OtherSignsPage() {
           could you want?
         </p>
       </div>
+      <p className="jumpToIntro"><strong>Jump to:</strong></p>
+      <JumpButtons />
       <OtherSignsInfo />
       <div className="otherFooter">
         <MoreInfoOnSigns />

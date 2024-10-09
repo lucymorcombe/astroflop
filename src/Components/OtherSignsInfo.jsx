@@ -16,6 +16,7 @@ function OtherSignsInfo() {
   return (
     <div className="otherSignsInfo">
       <OtherSignInfoBlock
+        id="jumpToAries"
         title="Aries"
         image={ariesRam}
         alt="Illustration of a ram, the Aries symbol."
@@ -29,6 +30,7 @@ function OtherSignsInfo() {
         risingDescription3="Overall, they bring a pioneering, spirited energy to their interactions and enjoy being in control."
       />
       <OtherSignInfoBlock
+        id="jumpToTaurus"
         title="Taurus"
         image={taurusBull}
         alt="Illustration of a bull, the Taurus symbol."
@@ -42,6 +44,7 @@ function OtherSignsInfo() {
         risingDescription3="Known for perseverance and determination, they bring a peaceful, grounded energy to their interactions, providing stability and trustworthiness."
       />
       <OtherSignInfoBlock
+        id="jumpToGemini"
         title="Gemini"
         image={geminiTwins}
         alt="Illustration of twinst, the Gemini symbol."
@@ -55,6 +58,7 @@ function OtherSignsInfo() {
         risingDescription3="In social settings, they are friendly, engaging, and ready to share opinions. They bring a dynamic, versatile energy to their interactions, making them enjoyable and interesting company."
       />
       <OtherSignInfoBlock
+        id="jumpToCancer"
         title="Cancer"
         image={cancerCrab}
         alt="Illustration of a crab, the Cancer symbol."
@@ -68,6 +72,7 @@ function OtherSignsInfo() {
         risingDescription3="Cautious with new experiences, they prefer familiar, secure environments. In social settings, they are friendly and calming, offering comfort and support."
       />
       <OtherSignInfoBlock
+        id="jumpToLeo"
         title="Leo"
         image={leoLion}
         alt="Illustration of a Lion, the Leo symbol."
@@ -81,6 +86,7 @@ function OtherSignsInfo() {
         risingDescription3="They bring a fun, lively energy to their surroundings and thrive in environments where they can shine."
       />
       <OtherSignInfoBlock
+        id="jumpToVirgo"
         title="Virgo"
         image={virgoVirgin}
         alt="Illustration of a woman, representing the Virgo symbol of the virgin."
@@ -94,6 +100,7 @@ function OtherSignsInfo() {
         risingDescription3="Their analytical nature can lead to self-criticism, but their intentions are rooted in improvement. They bring a grounded, conscientious energy to interactions."
       />
       <OtherSignInfoBlock
+        id="jumpToLibra"
         title="Libra"
         image={libraScales}
         alt="Illustration of scales, the Libra symbol."
@@ -107,6 +114,7 @@ function OtherSignsInfo() {
         risingDescription3="Overall, they bring a graceful, accommodating energy to their interactions."
       />
       <OtherSignInfoBlock
+        id="jumpToScorpio"
         title="Scorpio"
         image={scorpioScorpion}
         alt="Illustration of a scorpion, the Scorpio symbol."
@@ -120,6 +128,7 @@ function OtherSignsInfo() {
         risingDescription3="Overall, they possess a strong, determined energy and an air of mystery that captivates others."
       />
       <OtherSignInfoBlock
+        id="jumpToSagittarius"
         title="Sagittarius"
         image={sagittariusArcher}
         alt="Illustration of a bow and arrow, representing the Sagittarius symbol of the archer."
@@ -133,6 +142,7 @@ function OtherSignsInfo() {
         risingDescription3="Overall, they possess vibrant, lively energy and remain open to the world."
       />
       <OtherSignInfoBlock
+        id="jumpToCapricorn"
         title="Capricorn"
         image={capricornGoat}
         alt="Illustration of a goat, the Capricorn symbol."
@@ -146,6 +156,7 @@ function OtherSignsInfo() {
         risingDescription3="Overall, they approach life maturely, aiming for success and stability."
       />
       <OtherSignInfoBlock
+        id="jumpToAquarius"
         title="Aquarius"
         image={aquariusWaterBearer}
         alt="Illustration of water being poured, representing the Aquarius symbol of the water bearer."
@@ -159,6 +170,7 @@ function OtherSignsInfo() {
         risingDescription3="They bring fresh, inventive energy, making them intriguing and stimulating. Overall, they have a free-spirited, visionary approach that opens the door to new possibilities."
       />
       <OtherSignInfoBlock
+        id="jumpToPisces"
         title="Pisces"
         image={piscesFish}
         alt="Illustration of fish, the Pisces symbol."
