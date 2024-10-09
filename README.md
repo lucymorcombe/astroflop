@@ -1,6 +1,8 @@
 # astroflop
 Web Design 2 Project 
 
+Live url at bottom of file
+
 My original plan for my website, was for a site called StreamEase. This was intended to be a platform for browsing and searching films that are available to stream online for free with the option to filter by the streaming services that you already have access to.
 
 I did my presentation on this project and had created the project bar the fetching and displaying of the API data. When I got to this stage, I ran into some big problems. I was initially using the WatchMode API, but during coding I realised that what I was trying to do was above my skillset. I attempted to implement this many times and spent a lot of time re-learning the basics of Java and React to make more sense of the documentation, but to no avail. I then decided to use a simpler API to be able to search films – MoviesDatabase API. I wanted to ensure my page would have some functionality and that I was fetching and displaying data from an API but, still, this wasn’t working for me. I could fetch the data and show it in the console, but I couldn’t get this to show on my site. I spoke with Koundinya and posted my question on StackOverflow, but even with this advice the data still wasn’t displaying on the page.
@@ -70,4 +72,28 @@ Web Dev Cody (2020) Live coding a horoscope app using react, YouTube. Available 
 Free vector: Zodiac signs, Doodle Art Black & white illustration graphic set vector (no date) Freepik. Available at: https://www.freepik.com/free-vector/zodiac-signs-doodle-art-black-white-illustration-graphic-set-vector_20776469.htm#query=zodiac%20svg&position=2&from_view=keyword&track=ais&uuid=721dd501-6e5e-4b95-aaa3-a3fb5a6ae0fc (Accessed: 01 May 2024). 
 
 HeroTofu (2023) React contact form with frontend code only. send emails or save to google spreasheet, HeroTofu. Available at: https://herotofu.com/solutions/guides/react-contact-form (Accessed: 06 May 2024). 
+
+
+----------------------------------------------------------------------------
+
+
+**Live url** - https://astroflop.netlify.app/
+
+When deploying my site I realised there was an issue with my API. The API I used was of a non-secure HTTP site, and when deploying this on a HTTPS site the entire data fetching section of my site does not display as browsers automatically block mixed content for security. For you to be able to see that I have done this, you can temporarily disable this feature.
+
+On Firefox:
+1. Click the padlock icon. in the address bar.
+2. Click the arrow in the Site Information panel:
+3. Click Disable protection for now.
+4. You might need to refresh or return to the homepage if you get any errors.
+
+On Chrome:
+1. Click the 'view site information' button to the left of the url.
+2. Click site settings.
+3. Navigate to 'insecure content' and select allow.
+4. Go back to the page and refresh.
+
+It's good to know this now so that in future I can ensure all my APIs are https but frustrating that it causes an error for my site.
+
+Also to note, there's an animation on my homepage that doesn't run in Firefox, this is something that needs looking into as I'd like users to get the same experience of the site no matter which browser they're using.
 
