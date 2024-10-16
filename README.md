@@ -1,7 +1,7 @@
 # astroflop
 Web Design 2 Project 
 
-Live url at bottom of file
+Live url & API instructions at bottom of file
 
 Introducing…
 
