@@ -3,12 +3,6 @@ Web Design 2 Project
 
 Live url at bottom of file
 
-My original plan for my website, was for a site called StreamEase. This was intended to be a platform for browsing and searching films that are available to stream online for free with the option to filter by the streaming services that you already have access to.
-
-I did my presentation on this project and had created the project bar the fetching and displaying of the API data. When I got to this stage, I ran into some big problems. I was initially using the WatchMode API, but during coding I realised that what I was trying to do was above my skillset. I attempted to implement this many times and spent a lot of time re-learning the basics of Java and React to make more sense of the documentation, but to no avail. I then decided to use a simpler API to be able to search films – MoviesDatabase API. I wanted to ensure my page would have some functionality and that I was fetching and displaying data from an API but, still, this wasn’t working for me. I could fetch the data and show it in the console, but I couldn’t get this to show on my site. I spoke with Koundinya and posted my question on StackOverflow, but even with this advice the data still wasn’t displaying on the page.
-
-This was very frustrating and after spending 10+ hours looking at the same code and trying different methods to make it work, I decided to start a new project. I wanted to hand in something that I was happy with and that was functional. As my project now doesn’t align with anything said in my presentation, I will cover those topics below to give you an idea of the process that went into this site.
-
 Introducing…
 
 Astro-FLOP!
@@ -23,13 +17,9 @@ The final page is where the user can read their horoscope for yesterday, today, 
 
 Other than the horoscope section on my site, all of the information is hard coded. It would’ve been great to be able to access this data from an API but in the timeframe I was working with after changing my project, I felt this was the best way forward. 
 
-I definitely faced a lot of technical difficulties during this project, but feel like I managed to overcome most of them, bar the issues I had with the first two APIs I tried to implement. Even though this wasn’t successful, in trying to make it work I learned a lot more about React and heightened my understanding – which made not being able to complete that aspect even more frustrating, as I felt I understood what was happening, but I didn’t know how to fix it.
-
-Overall, I’m really happy with how my project turned out and I’m glad I started fresh. Completing the final site in a short time frame made me more confident in the skills I’ve learned this term.
-
 **Research Process**
 
-The research process for this site wasn’t as lengthy as I would’ve liked due to the time limitations,I found myself dealing with, but I visited other astrology websites and thought what works well and what I could do better:
+The research process for this site wasn’t as lengthy as I would’ve liked due to the time limitations I found myself dealing with, but I visited other astrology websites and thought what works well and what I could do better:
 
 cafeastrology.com - Text heavy throughout, almost has too much information. As I wanted my site to be beginner friendly, I fine-tuned the topics to include only the need-to-know i.e. sun, moon and rising signs.
 
